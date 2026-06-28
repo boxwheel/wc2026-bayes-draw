@@ -1,0 +1,39 @@
+{
+  "eval_protocol": "RepeatedStratifiedKFold(n_splits=5, n_repeats=10, random_state=0)",
+  "campaign_baseline_log_loss": 0.8337,
+  "campaign_baseline_log_loss_std": 0.134,
+  "n_matches": 64,
+  "elapsed_seconds": 1.3584060668945312,
+  "models": [
+    {
+      "model": "Elo-Logistic Baseline",
+      "log_loss_mean": 0.8336503142763525,
+      "log_loss_std": 0.1339730862865806,
+      "accuracy_mean": 0.6173076923076923,
+      "accuracy_std": 0.08844527907059303,
+      "ece": 0.03930279299560432,
+      "delta_vs_elo_baseline": -4.968572364749679e-05,
+      "verdict": "FLAT"
+    },
+    {
+      "model": "Two-Stage-EloOnly (C1=0.3, C2=1.0)",
+      "log_loss_mean": 0.820098947549269,
+      "log_loss_std": 0.08936886907822175,
+      "accuracy_mean": 0.6296153846153847,
+      "accuracy_std": 0.08196399604059577,
+      "ece": 0.07393737873037595,
+      "delta_vs_elo_baseline": -0.013601052450730955,
+      "verdict": "GREEN"
+    },
+    {
+      "model": "Two-Stage-EloOnly (C1=0.1, C2=5.0, CV-selected)",
+      "log_loss_mean": 0.8038406444558841,
+      "log_loss_std": 0.12730229823356803,
+      "accuracy_mean": 0.6357692307692308,
+      "accuracy_std": 0.07917318046492111,
+      "ece": 0.02730459443492568,
+      "delta_vs_elo_baseline": -0.029859355544115895,
+      "verdict": "GREEN"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "command": "python3 run_final.py",
+  "working_directory": "/home/user/research/wave2_bayes",
+  "python_version": "3.12.3",
+  "sklearn_version": "1.9.0",
+  "numpy_version": "2.4.6",
+  "random_seed": 0,
+  "n_folds": 5,
+  "n_repeats": 10,
+  "features_stage1": [
+    "elo_diff",
+    "host_advantage"
+  ],
+  "features_stage2": [
+    "elo_diff",
+    "host_advantage"
+  ],
+  "model": "TwoStageLogistic",
+  "hyperparams": {
+    "C1_untuned": 0.3,
+    "C2_untuned": 1.0,
+    "C1_tuned": 0.1,
+    "C2_tuned": 5.0
+  },
+  "leakage_prevention": "Scaler fitted inside each CV fold on training rows only. No post-match features used."
+}
