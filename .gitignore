@@ -1,0 +1,12 @@
+# box-wheel: never publish seeded scaffolding, caches, or data dumps
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+.provisioned
+.mcp.json
+CLAUDE.md
+FLYWHEEL_PRIMER.md
+bin/publish-repo
+*.zip
